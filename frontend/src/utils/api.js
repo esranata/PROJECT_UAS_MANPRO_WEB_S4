@@ -1,4 +1,4 @@
-const API_BASE = 'https://project-uas-manpro-web-s4.vercel.app';
+const API_BASE = 'https://project-uas-manpro-web-s4.vercel.app/api';
 
 export const api = {
   getToken: () => localStorage.getItem('token'),
