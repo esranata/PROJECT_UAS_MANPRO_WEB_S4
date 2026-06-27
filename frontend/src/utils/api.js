@@ -17,7 +17,9 @@ export const api = {
   logout: () => {
     localStorage.removeItem('token');
     localStorage.removeItem('user');
-    window.location.href = '/login';
+    // Ganti dari '/login' menjadi '/' agar Vercel mengembalikan ke halaman utama React
+    window.location.href = '/'; 
+  
   },
 
   async request(endpoint, options = {}) {
